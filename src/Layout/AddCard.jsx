@@ -47,6 +47,10 @@ function AddCard({ card, setCard, deck, setDeck, reRender, setReRender }) {
     setCard({ ...card, back: e.target.value });
   }
 
+  function handleCancel() {
+    history.push(`/decks/${deckId}`)
+  }
+
   return (
     <div>
       <nav aria-label="breadcrumb">
@@ -87,7 +91,7 @@ function AddCard({ card, setCard, deck, setDeck, reRender, setReRender }) {
             placeholder="Back side of the card"
           ></textarea>
         </div>
-        <button type="button" className="btn btn-secondary">
+        <button onClick={handleCancel} type="button" className="btn btn-secondary">
           Cancel
         </button>
         {/* Submit button should take the user to the deck screen */}
