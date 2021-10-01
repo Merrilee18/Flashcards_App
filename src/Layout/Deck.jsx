@@ -17,7 +17,7 @@ function Deck({ deckId, name, description, count, setReRender, reRender }) {
   }
 
   return (
-    <div className="row">
+    <div className="row mb-3">
       <div className="col">
         <div className="card">
           <div className="card-body">

@@ -15,7 +15,7 @@ function CardList({ cards = [] }) {
     <div>
       <ul className="CardList list-group">
         {cards.map((card, key) => (
-          <li className="list-group-item">
+          <li key={key} className="list-group-item">
             <div className="d-flex justify-content-between row">
               <div className="row align-content-center ">
                 <div className="col mx-3">{card.front}</div>

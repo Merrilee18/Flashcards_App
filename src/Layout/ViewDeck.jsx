@@ -3,12 +3,9 @@ import { Link, useRouteMatch, useParams, useHistory } from "react-router-dom";
 import { deleteDeck, readDeck } from "../utils/api/index.js";
 import CardList from "./CardList";
 
-{
   /* Displays the current deck with a preview of it's cards */
-}
-{
   /* Has options to edit, study, add cards, and delete */
-}
+
 
 function ViewDeck({ deck, setDeck, reRender, setReRender }) {
   const { url } = useRouteMatch();
